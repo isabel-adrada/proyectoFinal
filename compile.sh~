@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Compilando el juego..."
+cd ~/proyectoFinal/build
+make
+if [ $? -eq 0 ]; then
+    echo "Compilación exitosa. Ejecutando el juego..."
+    ./juego
+else
+    echo "Error en la compilación. Revisa los errores."
+fi
